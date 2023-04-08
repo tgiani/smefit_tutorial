@@ -1,16 +1,15 @@
 [build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
 
-[tool.poetry]
+[project]
 name = "smefit_tutorial"
 version = "0.0.4"
 description = "Standard Model Effective Field Theory Fitter"
 authors = [
-    "Tommaso Giani <tgiani@nikhef.nl>",
-    "Giacomo Magni <gmagni@nikhef.nl>",
+    {name = "Tommaso Giani", email = "tgiani@nikhef.nl"},
+    {name = "Giacomo Magni", email = "gmagni@nikhef.nl"},
 ]
-license = "LICENSE"
 readme = "README.md"
 keywords = ["packaging", "dependency", "infer", "pyproject.toml"]
 repository = "https://github.com/tgiani/smefit_tutorial"
@@ -21,47 +20,20 @@ classifiers=[
   "Topic :: Scientific/Engineering",
   "Topic :: Scientific/Engineering :: Physics",
 ]
+requires-python = ">=3.8"
 
-# Requirements
-[tool.poetry.dependencies]
-python = ">=3.8,<3.11"
-rich="^11.2.0"
-matplotlib="^3.5.1"
-pyyaml="^5.3.0"
-numpy="^1.21.5"
-pandas="^1.4.1"
-scipy="^1.8.0"
-click="^8.1.3"
-cma="^3.2.2"
-seaborn="^0.11.2"
-
-sphinx = { version = "^4.3.2", optional = true }
-sphinx-rtd-theme = { version = "^1.0.0", optional = true }
-sphinxcontrib-bibtex = { version = "^2.4.1", optional = true }
-nbsphinx = { version = "^0.8.8", optional = true }
-
-pytest = { version = "^7.1", optional = true }
-pytest-cov ={ version =  "^2.12.1", optional = true }
-ipython ={ version =  "^8.4.0", optional = true }
-pdbpp = { version =  "^0.10.3", optional = true }
-coverage = { version = "^6.5.0", optional = true }
-
-[tool.poetry.extras]
-docs = ["sphinx", "sphinx-rtd-theme", "sphinxcontrib-bibtex", "nbsphinx"]
-tests = ["pdbpp", "ipython", "pytest-cov", "pytest", "coverage"]
-
-
-[tool.pytest.ini_options]
-testpaths = ['tests/']
-python_files = ['test_*.py', 'benchmark_*.py']
-python_classes = ['Test*', 'Benchmark*']
-python_functions = ['test_*', 'benchmark_*']
-addopts = [
-  '--cov=smefit',
-  '--cov-report=html',
-  '--cov-report=xml',
-  '--strict-markers',
+dependencies = [
+  "rich >= 11.2.0",
+  "matplotlib >= 3.5.1",
+  "pyyaml >= 5.3.0",
+  "numpy >= 1.21.5",
+  "pandas >= 1.4.1",
+  "scipy >= 1.8.0",
+  "click >= 8.1.3",
+  "cma >= 3.2.2",
+  "seaborn >= 0.11.2",
 ]
 
-[tool.poetry.scripts]
+
+[project.scripts]
 smefit = "smefit_tutorial.cli:base_command"

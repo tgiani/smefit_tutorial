@@ -5,7 +5,7 @@ import subprocess
 from shutil import copyfile
 
 import yaml
-from mpi4py import MPI
+#from mpi4py import MPI
 
 from .analyze.pca import RotateToPca
 from .chi2 import Scanner

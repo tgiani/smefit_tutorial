@@ -2,7 +2,7 @@
 import json
 import pathlib
 
-from mpi4py import MPI
+#from mpi4py import MPI
 from rich.style import Style
 from rich.table import Table
 
@@ -78,14 +78,18 @@ class Optimizer:
                 computed :math:`\chi^2`
         """
 
-        comm = MPI.COMM_WORLD
-        rank = comm.Get_rank()
-        if rank == 0:
-            self.counter += 1
-            if print_log:
-                print_log = (self.counter % self.print_rate) == 0
-        else:
-            print_log = False
+        # comm = MPI.COMM_WORLD
+        # rank = comm.Get_rank()
+        # if rank == 0:
+        #     self.counter += 1
+        #     if print_log:
+        #         print_log = (self.counter % self.print_rate) == 0
+        # else:
+        #     print_log = False
+
+        self.counter += 1
+        if print_log:
+            print_log = (self.counter % self.print_rate) == 0
 
         chi2_tot = chi2.compute_chi2(
             self.loaded_datasets,

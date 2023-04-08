@@ -2,7 +2,7 @@
 import pathlib
 
 import click
-from mpi4py import MPI
+#from mpi4py import MPI
 
 from .. import log
 from ..analyze import run_report
