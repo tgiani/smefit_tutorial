@@ -5,9 +5,9 @@ import shutil
 
 import numpy as np
 
-from smefit.analyze import pca
-from smefit.coefficients import CoefficientManager
-from smefit.loader import load_datasets
+from smefit_tutorial.analyze import pca
+from smefit_tutorial.coefficients import CoefficientManager
+from smefit_tutorial.loader import load_datasets
 
 from .test_loader import commondata_path
 

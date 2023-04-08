@@ -4,7 +4,7 @@ import pathlib
 
 import numpy as np
 
-from smefit.loader import load_datasets
+from smefit_tutorial.loader import load_datasets
 
 commondata_path = pathlib.Path(__file__).parents[0] / "fake_data"
 

@@ -4,10 +4,10 @@ import pathlib
 import numpy as np
 import pandas as pd
 
-from smefit.analyze import chi2_utils
-from smefit.chi2 import compute_chi2
-from smefit.compute_theory import make_predictions
-from smefit.fit_manager import FitManager
+from smefit_tutorial.analyze import chi2_utils
+from smefit_tutorial.chi2 import compute_chi2
+from smefit_tutorial.compute_theory import make_predictions
+from smefit_tutorial.fit_manager import FitManager
 
 here = pathlib.Path(__file__).parent
 

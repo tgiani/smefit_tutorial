@@ -5,9 +5,9 @@ import pathlib
 import numpy as np
 from scipy import optimize as sciopt
 
-import smefit.optimize as opt
+import smefit_tutorial.optimize as opt
 import tests.test_loader as ld
-from smefit.compute_theory import flatten, make_predictions
+from smefit_tutorial.compute_theory import flatten, make_predictions
 
 commondata_path = pathlib.Path(__file__).parents[0] / "fake_data"
 

@@ -67,18 +67,6 @@ conda activate $CONDA_ENV
 poetry update
 poetry install
 
-# install Multinest
-MULTINEST_INSTALLATION_PATH=$PWD/'multinest_bld'
-mkdir -p $MULTINEST_INSTALLATION_PATH && cd $_
-git clone https://github.com/farhanferoz/MultiNest.git
-cd $MULTINEST_INSTALLATION_PATH'/MultiNest/MultiNest_v3.12_CMake/multinest'
-mkdir 'build' && cd $_
-export FCFLAGS="-w -fallow-argument-mismatch -O2"
-export FFLAGS="-w -fallow-argument-mismatch -O2"
-cmake ..  -DCMAKE_INSTALL_PREFIX=$CONDA_PREFIX
-make
-make install
-rm -rf $MULTINEST_INSTALLATION_PATH
 
 echo
 echo 'Installation was successful !!'

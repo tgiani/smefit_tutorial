@@ -2,10 +2,10 @@
 import numpy as np
 import pandas as pd
 
-from smefit.analyze import fisher
-from smefit.chi2 import Scanner, compute_chi2
-from smefit.compute_theory import make_predictions
-from smefit.loader import load_datasets
+from smefit_tutorial.analyze import fisher
+from smefit_tutorial.chi2 import Scanner, compute_chi2
+from smefit_tutorial.compute_theory import make_predictions
+from smefit_tutorial.loader import load_datasets
 
 from .test_loader import commondata_path
 
