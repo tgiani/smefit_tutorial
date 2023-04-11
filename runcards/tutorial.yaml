@@ -1,7 +1,7 @@
 result_ID: tutorial
 
 # absolute path where results are stored
-result_path: 
+result_path: ./results
 
 # path to common data
 data_path:  ./smefit_tutorial/commondata/
@@ -32,7 +32,7 @@ toll: 0.5
 datasets:
 
   # STXS combination
-  - STXS_2020_public_final
+  - atlas_data_tutorial
 
 # Coefficients to fit
 coefficients:
