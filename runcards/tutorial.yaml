@@ -32,7 +32,7 @@ toll: 0.5
 datasets:
 
   # STXS combination
-  - atlas_data_tutorial
+  - atlas_tutorial
 
 # Coefficients to fit
 coefficients:
