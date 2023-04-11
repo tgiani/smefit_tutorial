@@ -130,8 +130,8 @@ class MCOptimizer(Optimizer):
         coefficients = CoefficientManager.from_dict(config["coefficients"])
 
         use_bounds = config.get("use_bounds", True)
-        if not use_bounds:
-            log.console.log("Running minimization without initial bounds")
+        #if not use_bounds:
+        #    log.console.log("Running minimization without initial bounds")
 
         minimizer_specs = {}
         minimizer_specs["mc_minimiser"] = config.get("mc_minimiser", "trust-constr")
@@ -272,7 +272,7 @@ class MCOptimizer(Optimizer):
                 raise ValueError("Minimization was not successful, exit ...")
 
         t2 = time.time()
-        log.console.log(f"Time : {((t2 - t1) / 60.0):.3f} minutes")
+        #log.console.log(f"Time : {((t2 - t1) / 60.0):.3f} minutes")
 
     def save(self):
         """
@@ -296,7 +296,7 @@ class MCOptimizer(Optimizer):
         for par, value in zip(self.coefficients.name, self.coefficients.value):
             table.add_row(f"{par}", f"{value:.3f}")
             values[par] = value
-        log.console.print(table)
+        #log.console.print(table)
 
         posterior_file = (
             self.results_path

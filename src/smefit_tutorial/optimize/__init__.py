@@ -113,7 +113,7 @@ class Optimizer:
                     )
                     / dataset.NdataExp
                 )
-            log.console.print(self.generate_chi2_table(chi2_dict, chi2_tot))
+            #log.console.print(self.generate_chi2_table(chi2_dict, chi2_tot))
 
         return chi2_tot
 

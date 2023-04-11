@@ -1,0 +1,69 @@
+result_ID: STXS_2020_public
+
+# absolute path where results are stored
+result_path: 
+
+# path to common data
+data_path:  
+
+# path to theory tables, default same as data path
+theory_path:  
+
+# pQCD order (LO or NLO)
+order: NLO
+
+# SMEFT Expansion Order (NHO = Lambda^-2 , HO = Lambda^-4)
+use_quad: False
+use_t0: False
+
+use_theory_covmat: False
+
+# Set parameter bounds to previous SCAN result
+bounds: Null
+
+
+# NS settings
+nlive: 1000
+efr: 0.005
+ceff: True
+toll: 0.5
+
+# Datasets to include
+datasets:
+
+  # STXS combination
+  - STXS_2020_public_final
+
+# Coefficients to fit
+coefficients:
+
+  c2q2l_01: {'min': -10.0, 'max': 10.0}
+  c2q2l_02: {'min': -10.0, 'max': 10.0}
+  c2q2l_03: {'min': -10.0, 'max': 10.0}
+  c2q2l_04: {'min': -20.0, 'max': 20.0}
+  c4q_01: {'min': -10.0, 'max': 10.0} 
+  c4q_02: {'min': -20.0, 'max': 30.0} 
+  cHG: {'min': -10.0, 'max': 10.0} 
+  cW: {'min': -10.0, 'max': 10.0}
+  c_LEP_EW_01: {'min': -10.0, 'max': 10.0} 
+  c_LEP_EW_02: {'min': -10.0, 'max': 10.0} 
+  c_LEP_EW_03: {'min': -10.0, 'max': 10.0} 
+  c_LEP_EW_04: {'min': -10.0, 'max': 10.0} 
+  c_LEP_EW_05: {'min': -10.0, 'max': 10.0} 
+  c_LEP_EW_06: {'min': -10.0, 'max': 10.0} 
+  c_LEP_EW_07: {'min': -10.0, 'max': 10.0} 
+  c_LEP_EW_08: {'min': -10.0, 'max': 10.0} 
+  c_LEP_EW_09: {'min': -10.0, 'max': 10.0} 
+  c_LEP_EW_10: {'min': -10.0, 'max': 10.0} 
+  c_LEP_EW_11: {'min': -10.0, 'max': 10.0} 
+  c_LEP_EW_12: {'min': -10.0, 'max': 10.0} 
+  c_LEP_EW_13: {'min': -10.0, 'max': 10.0} 
+  c_LEP_EW_14: {'min': -10.0, 'max': 10.0} 
+  cbHRe: {'min': -10.0, 'max': 10.0} 
+  ceHRe: {'min': -10.0, 'max': 10.0} 
+  ctGRe: {'min': -10.0, 'max': 10.0} 
+  ctHRe: {'min': -10.0, 'max': 20.0} 
+  ctop_01: {'min': -10.0, 'max': 10.0} 
+  cuHRe_cdHRe_cHbox_01: {'min': -10.0, 'max': 10.0} 
+
+rot_to_fit_basis: 
