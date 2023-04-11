@@ -37,33 +37,33 @@ datasets:
 # Coefficients to fit
 coefficients:
 
-  c2q2l_01: {'constrain': True and 'value': 0.0, 'min': -10.0, 'max': 10.0}
-  c2q2l_02: {'constrain': True and 'value': 0.0, 'min': -10.0, 'max': 10.0}
-  c2q2l_03: {'constrain': True and 'value': 0.0, 'min': -10.0, 'max': 10.0}
-  c2q2l_04: {'constrain': True and 'value': 0.0, 'min': -20.0, 'max': 20.0}
-  c4q_01: {'constrain': True and 'value': 0.0,'min': -10.0, 'max': 10.0} 
-  c4q_02: {'constrain': True and 'value': 0.0,'min': -20.0, 'max': 30.0} 
+  c2q2l_01: {'constrain': True , 'value': 0.0, 'min': -10.0, 'max': 10.0}
+  c2q2l_02: {'constrain': True , 'value': 0.0, 'min': -10.0, 'max': 10.0}
+  c2q2l_03: {'constrain': True , 'value': 0.0, 'min': -10.0, 'max': 10.0}
+  c2q2l_04: {'constrain': True , 'value': 0.0, 'min': -20.0, 'max': 20.0}
+  c4q_01: {'constrain': True , 'value': 0.0,'min': -10.0, 'max': 10.0} 
+  c4q_02: {'constrain': True , 'value': 0.0,'min': -20.0, 'max': 30.0} 
   cHG: {'min': -10.0, 'max': 10.0} 
-  cW: {'constrain': True and 'value': 0.0,'min': -10.0, 'max': 10.0}
-  c_LEP_EW_01: {'constrain': True and 'value': 0.0,'min': -10.0, 'max': 10.0} 
-  c_LEP_EW_02: {'constrain': True and 'value': 0.0,'min': -10.0, 'max': 10.0} 
-  c_LEP_EW_03: {'constrain': True and 'value': 0.0,'min': -10.0, 'max': 10.0} 
-  c_LEP_EW_04: {'constrain': True and 'value': 0.0,'min': -10.0, 'max': 10.0} 
-  c_LEP_EW_05: {'constrain': True and 'value': 0.0,'min': -10.0, 'max': 10.0} 
-  c_LEP_EW_06: {'constrain': True and 'value': 0.0,'min': -10.0, 'max': 10.0} 
-  c_LEP_EW_07: {'constrain': True and 'value': 0.0,'min': -10.0, 'max': 10.0} 
-  c_LEP_EW_08: {'constrain': True and 'value': 0.0,'min': -10.0, 'max': 10.0} 
-  c_LEP_EW_09: {'constrain': True and 'value': 0.0,'min': -10.0, 'max': 10.0} 
-  c_LEP_EW_10: {'constrain': True and 'value': 0.0,'min': -10.0, 'max': 10.0} 
-  c_LEP_EW_11: {'constrain': True and 'value': 0.0,'min': -10.0, 'max': 10.0} 
-  c_LEP_EW_12: {'constrain': True and 'value': 0.0,'min': -10.0, 'max': 10.0} 
-  c_LEP_EW_13: {'constrain': True and 'value': 0.0,'min': -10.0, 'max': 10.0} 
-  c_LEP_EW_14: {'constrain': True and 'value': 0.0,'min': -10.0, 'max': 10.0} 
-  cbHRe: {'constrain': True and 'value': 0.0,'min': -10.0, 'max': 10.0} 
-  ceHRe: {'constrain': True and 'value': 0.0,'min': -10.0, 'max': 10.0} 
-  ctGRe: {'constrain': True and 'value': 0.0,'min': -10.0, 'max': 10.0} 
-  ctHRe: {'constrain': True and 'value': 0.0,'min': -10.0, 'max': 20.0} 
-  ctop_01: {'constrain': True and 'value': 0.0,'min': -10.0, 'max': 10.0} 
-  cuHRe_cdHRe_cHbox_01: {'constrain': True and 'value': 0.0,'min': -10.0, 'max': 10.0} 
+  cW: {'constrain': True , 'value': 0.0,'min': -10.0, 'max': 10.0}
+  c_LEP_EW_01: {'constrain': True , 'value': 0.0,'min': -10.0, 'max': 10.0} 
+  c_LEP_EW_02: {'constrain': True , 'value': 0.0,'min': -10.0, 'max': 10.0} 
+  c_LEP_EW_03: {'constrain': True , 'value': 0.0,'min': -10.0, 'max': 10.0} 
+  c_LEP_EW_04: {'constrain': True , 'value': 0.0,'min': -10.0, 'max': 10.0} 
+  c_LEP_EW_05: {'constrain': True , 'value': 0.0,'min': -10.0, 'max': 10.0} 
+  c_LEP_EW_06: {'constrain': True , 'value': 0.0,'min': -10.0, 'max': 10.0} 
+  c_LEP_EW_07: {'constrain': True , 'value': 0.0,'min': -10.0, 'max': 10.0} 
+  c_LEP_EW_08: {'constrain': True , 'value': 0.0,'min': -10.0, 'max': 10.0} 
+  c_LEP_EW_09: {'constrain': True , 'value': 0.0,'min': -10.0, 'max': 10.0} 
+  c_LEP_EW_10: {'constrain': True , 'value': 0.0,'min': -10.0, 'max': 10.0} 
+  c_LEP_EW_11: {'constrain': True , 'value': 0.0,'min': -10.0, 'max': 10.0} 
+  c_LEP_EW_12: {'constrain': True , 'value': 0.0,'min': -10.0, 'max': 10.0} 
+  c_LEP_EW_13: {'constrain': True , 'value': 0.0,'min': -10.0, 'max': 10.0} 
+  c_LEP_EW_14: {'constrain': True , 'value': 0.0,'min': -10.0, 'max': 10.0} 
+  cbHRe: {'constrain': True , 'value': 0.0,'min': -10.0, 'max': 10.0} 
+  ceHRe: {'constrain': True , 'value': 0.0,'min': -10.0, 'max': 10.0} 
+  ctGRe: {'constrain': True , 'value': 0.0,'min': -10.0, 'max': 10.0} 
+  ctHRe: {'constrain': True , 'value': 0.0,'min': -10.0, 'max': 20.0} 
+  ctop_01: {'constrain': True , 'value': 0.0,'min': -10.0, 'max': 10.0} 
+  cuHRe_cdHRe_cHbox_01: {'constrain': True , 'value': 0.0,'min': -10.0, 'max': 10.0} 
 
 rot_to_fit_basis: ./smefit_tutorial/rotations/fitbasis_28_pars.json
